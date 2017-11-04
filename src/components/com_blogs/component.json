@@ -1,0 +1,18 @@
+{
+  "name": "Blogs",
+  "description": "Blog social media app for Anahita",
+  "type": "component",
+  "version": "1.0.0",
+  "homepage": "http://nicholasjohn16.com",
+  "license": "GPLv3",
+  "copyright": [
+      "Copyright 2017 NicholasJohn16"
+  ],
+  "authors": [
+      {
+        "name": "Nick Swinford",
+        "email": "nick@nicholasjohn16.com",
+        "homepage": "http://nicholasjohn16.com"
+      }
+  ]
+}
