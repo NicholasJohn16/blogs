@@ -11,11 +11,11 @@ class ComBlogsControllerToolbarActorbar extends ComMediumControllerToolbarActorb
     /**
      * Before controller action.
      *
-     * @param KEvent $event Event object
+     * @param AnEvent $event Event object
      *
      * @return string
      */
-    public function onBeforeControllerGet(KEvent $event)
+    public function onBeforeControllerGet(AnEvent $event)
     {
         parent::onBeforeControllerGet($event);
 
