@@ -6,43 +6,37 @@
 	<fieldset>
 	    <legend><?= @text('COM-BLOGS-BLOG-ADD') ?></legend>	
 	    	
-		<div class="control-group">
-			<label class="control-label" for="blog-title">
+		<div class="form-group">
+			<label for="blog-title">
 			    <?= @text('COM-BLOGS-BLOG-TITLE') ?>
 			</label> 
 			
-			<div class="controls">
-				<input id="blog-title" class="input-block-level" name="title" value="" size="50" maxlength="255" type="text" required autofocus />
-			</div>
+			<input id="blog-title" class="form-control" name="title" value="" size="50" maxlength="255" type="text" required autofocus />
 		</div>
 		
-		<div class="control-group">
-            <label class="control-label" for="blog-body">
+		<div class="form-group">
+            <label for="blog-body">
                 <?= @text('LIB-AN-MEDIUM-BODY') ?>
             </label>
-            <div class="controls">
-                <?= @editor(array(
-                    'name' => 'body',
-                    'content' => '',
-                    'html' => array(
-                        'maxlength' => '20000',
-                        'cols' => '5',
-                        'rows' => '5',
-                        'class' => 'input-block-level',
-                        'id' => 'blog-body',
-                        ),
-                )); ?>
-            </div>
+            <?= @editor(array(
+                'name' => 'body',
+                'content' => '',
+                'html' => array(
+                    'maxlength' => '20000',
+                    'cols' => '5',
+                    'rows' => '5',
+                    'class' => 'form-control',
+                    'id' => 'blog-body',
+                    ),
+            )); ?>
         </div>
 		
-		<div class="control-group">
-			<label class="control-label" id="privacy" >
+		<div class="form-group">
+			<label id="privacy" >
 			    <?= @text('LIB-AN-PRIVACY-FORM-LABEL') ?>
 			</label>
 			
-			<div class="controls">
-				<?= @helper('ui.privacy', array('entity' => $blog, 'auto_submit' => false, 'options' => $actor)) ?>
-			</div>
+			<?= @helper('ui.privacy', array('entity' => $blog, 'auto_submit' => false, 'options' => $actor)) ?>
 		</div>
 			
 		<div class="form-actions">

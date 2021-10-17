@@ -1,14 +1,14 @@
 <?php defined('KOOWA') or die('Restricted access') ?>
 
 <div class="row">
-	<div class="span8">
-	<?= @helper('ui.header') ?>
-	<?= @template('blog') ?>
-	<?= @helper('ui.comments', $blog) ?>
+	<div class="col-8">
+		<?= @helper('ui.header') ?>
+		<?= @template('blog') ?>
+		<?= @helper('ui.comments', $blog) ?>
 	</div>
 
 	<?php if ($actor->authorize('administration')): ?>
-	<div class="span4 visible-desktop">
+	<div class="col-4 d-none d-md-block">
 		<h4 class="block-title">
 		    <?= @text('COM-BLOGS-BLOG-PRIVACY') ?>
 		</h4>
